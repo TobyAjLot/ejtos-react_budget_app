@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.currency-default {
+    background-color: lime;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.currency-other {
+    background-color: lime;
+}
+

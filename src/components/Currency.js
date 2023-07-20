@@ -20,15 +20,13 @@ const Currency = () => {
 
  return (
    <div className='alert alert-secondary'>
-    <div class="custom-select">
-        <select id='currency' value={currency} onChange={handleCurrencyChange} className='lime-background'>
-        <option value='default' disabled hidden>{`Currency (${currency} Pound)`}</option>
-        <option value='$' name="Dollar">$ Dollar</option>
-        <option value='£' name="Pound">£ Pound</option>
-        <option value='€' name="Euro">€ Euro </option>
-        <option value='₹' name="Rupee">₹ Rupee</option>
-        </select>
-     </div>
+          <select className="custom-select" id="currencyGroupSelect" onChange={handleCurrencyChange}>
+                <option className="currency-default" value="default" hidden>{`Currency (${currency} Pound)`}</option>
+                <option className="currency-other" value='$' name="Dollar">$ Dollar</option>
+                <option className="currency-other" value='£' name="Pound">£ Pound</option>
+        		<option className="currency-other" value='€' name="Euro">€ Euro </option>
+        		<option className="currency-other" value='₹' name="Rupee">₹ Rupee</option>
+              </select>
    </div>
  );
 };
