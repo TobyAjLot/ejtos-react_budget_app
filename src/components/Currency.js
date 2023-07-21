@@ -27,6 +27,7 @@ const Currency = () => {
         		<option className="currency-other" value='€' name="Euro">€ Euro </option>
         		<option className="currency-other" value='₹' name="Rupee">₹ Rupee</option>
               </select>
+              
    </div>
  );
 };
